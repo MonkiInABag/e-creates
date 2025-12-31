@@ -401,3 +401,9 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+.clamp-card .thumb img {
+  height: 140px;        /* smaller thumbnail */
+  object-fit: contain; /* show whole image */
+  background: #f3f4f6; /* light background for PNG */
+}
