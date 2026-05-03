@@ -8,16 +8,17 @@
   </head>
 
   <body>
-    <!-- NAV -->
     <header class="site-header">
       <div class="container nav">
         <a class="logo" href="index.html" aria-label="E-Creates Home">
           <img src="assets/ec.png" alt="E-Creates logo" class="logo-img" />
+          <span>E-Creates</span>
         </a>
 
         <nav class="nav-links" aria-label="Primary">
           <a href="index.html#home">Home</a>
           <a href="about.html">About</a>
+          <a href="index.html#skills">Skills</a>
           <a href="index.html#projects">Projects</a>
           <a href="index.html#prints">3D Prints</a>
           <a href="about.html#contact">Contact</a>
@@ -26,20 +27,21 @@
     </header>
 
     <main class="container section">
-      <!-- TOP: About text (left) + photo (right) -->
       <section class="about-top">
         <div class="about-copy">
-          <h1 class="page-title">About</h1>
+          <p class="eyebrow">About</p>
+          <h1 class="page-title">Engineer, maker, and robotics student.</h1>
 
           <p class="about-lead">
-            Hi I am Ethan. I am a Robotics, Autonomous and Interactive Systems Engineer studying at
+            Hi, I am Ethan. I am a Robotics, Autonomous and Interactive Systems Engineer studying at
             Heriot-Watt University.
           </p>
 
           <p class="about-body">
-            I want to develop my skills and add more work to my portfolio, to show the world what I can do!
-            I have a passion for creating things that move around and hopefully don’t break in the process.
-            I have loads of projects that I want to make and show.
+            I am building E-Creates as a portfolio for the projects, prototypes, and printed parts I
+            develop while improving my CAD, electronics, robotics, mechanical design, and software
+            skills. I enjoy making things that move, testing what works, and improving each version
+            until it feels more robust and useful.
           </p>
         </div>
 
@@ -48,8 +50,8 @@
         </div>
       </section>
 
-      <!-- BELOW: Contact form -->
       <section id="contact" class="contact-section">
+        <p class="eyebrow">Contact</p>
         <h2 class="section-title">Contact me</h2>
 
         <form class="contact-form" action="https://formspree.io/f/xojqopka" method="POST">
@@ -92,7 +94,7 @@
     </main>
 
     <footer class="container footer">
-      <small>© <span id="year"></span> E-Creates</small>
+      <small>&copy; <span id="year"></span> E-Creates</small>
     </footer>
 
     <script src="script.js"></script>

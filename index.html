@@ -3,60 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-Creates</title>
+    <title>E-Creates | Robotics and Product Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <!-- NAV -->
     <header class="site-header">
       <div class="container nav">
         <a class="logo" href="index.html" aria-label="E-Creates Home">
           <img src="assets/ec.png" alt="E-Creates logo" class="logo-img" />
+          <span>E-Creates</span>
         </a>
 
-
-        <nav class="nav-links">
+        <nav class="nav-links" aria-label="Primary">
           <a href="index.html#home">Home</a>
           <a href="about.html">About</a>
+          <a href="index.html#skills">Skills</a>
           <a href="index.html#projects">Projects</a>
           <a href="index.html#prints">3D Prints</a>
           <a href="about.html#contact">Contact</a>
         </nav>
-
       </div>
     </header>
 
-    <!-- MAIN -->
     <main id="home">
-      <!-- HERO -->
-      <section class="container hero">
-        <h1 class="hero-title">E-Creates</h1>
-        <p class="hero-subtitle">Creating ideas, one layer at a time.</p>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Robotics - CAD - Prototyping</p>
+            <h1>Designing practical ideas into working prototypes.</h1>
+            <p class="hero-subtitle">
+              E-Creates is my portfolio of robotics, product design, electronics, software,
+              and 3D printed builds, developed through hands-on experimentation and engineering study.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#projects">View projects</a>
+              <a class="btn secondary" href="about.html#contact">Get in touch</a>
+            </div>
+          </div>
+
+          <div class="hero-showcase" aria-label="Featured work preview">
+            <img src="assets/buddi.jpg" alt="Buddi desk robot project" />
+            <div class="showcase-caption">
+              <span>Featured project</span>
+              <strong>Buddi</strong>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <!-- PROJECTS SECTION -->
-      <section id="projects" class="container section">
-        <h2>Projects</h2>
+      <section id="skills" class="container section skills-section">
+        <div class="section-heading">
+          <p class="eyebrow">Capabilities</p>
+          <h2>My Skills</h2>
+        </div>
 
-        <div class="grid">
+        <div class="skill-bubbles" aria-label="Skills">
+          <span>CAD</span>
+          <span>Electrical prototyping</span>
+          <span>Robotics</span>
+          <span>Mechanical designs</span>
+          <span>Software development</span>
+        </div>
+      </section>
+
+      <section id="projects" class="container section">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2>Projects</h2>
+          </div>
+          <p>
+            A mix of personal robotics, electronic builds, and iterative prototypes.
+          </p>
+        </div>
+
+        <div class="project-grid">
           <article
             class="card clickable"
             data-title="Buddi"
-            data-desc="Desk bot companion."
+            data-desc="Desk bot companion with expressive interaction."
             data-details="Key details:
-            • ESP32-based control
-            • OLED display for facial expressions
-            • Compact desk-friendly form factor
-            • Modular magnetic attachments
-            • Designed for future expansion and interaction"
+- ESP32-based control
+- OLED display for facial expressions
+- Compact desk-friendly form factor
+- Modular magnetic attachments
+- Designed for future expansion and interaction"
             data-image="assets/buddi.jpg"
-            >
+          >
             <div class="thumb">
               <img src="assets/buddi.jpg" alt="Buddi thumbnail" />
             </div>
-            <h3>Buddi</h3>
-            <p>Click to view details</p>
+            <div class="card-body">
+              <p class="card-kicker">Robotics</p>
+              <h3>Buddi</h3>
+              <p>Desk bot companion with expressive interaction and future expansion in mind.</p>
+            </div>
+          </article>
+
+          <article
+            class="card clickable"
+            data-title="Hivemind"
+            data-desc="Coming soon"
+            data-details="Key details:
+- Coming soon"
+            data-image=""
+          >
+            <div class="thumb placeholder-thumb">
+              <span>Hivemind</span>
+            </div>
+            <div class="card-body">
+              <p class="card-kicker">Coming soon</p>
+              <h3>Hivemind</h3>
+              <p>A new project space with a placeholder image area ready for your final visuals.</p>
+            </div>
           </article>
 
           <article
@@ -64,171 +124,194 @@
             data-title="Panzer"
             data-desc="Tracked robot platform prototype."
             data-details="Key details:
-            • Compact tracked chassis
-            • Focus on torque and stability
-            • Modular mounting points
-            • Iterated gearing and track tension
-            • Lessons learned: weight distribution is critical"
+- Compact tracked chassis
+- Focus on torque and stability
+- Modular mounting points
+- Iterated gearing and track tension
+- Lessons learned: weight distribution is critical"
             data-image="assets/panzer.jpg"
-           >
+          >
             <div class="thumb">
-                <img src="assets/panzer.jpg" alt="Panzer project thumbnail" />
+              <img src="assets/panzer.jpg" alt="Panzer project thumbnail" />
             </div>
-            <h3>Panzer</h3>
-            <p>Click to view details</p>
+            <div class="card-body">
+              <p class="card-kicker">Mobile robotics</p>
+              <h3>Panzer</h3>
+              <p>Tracked prototype focused on torque, stability, and mechanical iteration.</p>
+            </div>
           </article>
-
 
           <article
             class="card clickable"
             data-title="Cat Mood Lamp"
             data-desc="Decorative lamp with expressive design."
             data-details="Key details:
-          • 3D printed housing
-          • Diffused LED lighting
-          • Designed for ambient lighting
-          • Focus on aesthetics and print quality"
+- 3D printed housing
+- Diffused LED lighting
+- Designed for ambient lighting
+- Focus on aesthetics and print quality"
             data-image="assets/catMoodLamp.jpg"
           >
             <div class="thumb">
               <img src="assets/catMoodLamp.jpg" alt="Cat Mood Lamp thumbnail" />
             </div>
-            <h3>Cat Mood Lamp</h3>
-            <p>Click to view details</p>
+            <div class="card-body">
+              <p class="card-kicker">Product design</p>
+              <h3>Cat Mood Lamp</h3>
+              <p>Decorative printed lamp exploring form, lighting, and surface finish.</p>
+            </div>
           </article>
-
 
           <article
             class="card clickable"
             data-title="Robot Claw v1"
             data-desc="First iteration of a servo-driven robotic claw."
             data-details="Key details:
-          • Fully 3D printed
-          • Single servo actuation
-          • Focused on mechanical simplicity
-          • Identified structural weaknesses"
+- Fully 3D printed
+- Single servo actuation
+- Focused on mechanical simplicity
+- Identified structural weaknesses"
             data-image="assets/clawV1.jpg"
           >
             <div class="thumb">
               <img src="assets/clawV1.jpg" alt="Robot Claw v1 thumbnail" />
             </div>
-            <h3>Robot Claw v1</h3>
-            <p>Click to view details</p>
+            <div class="card-body">
+              <p class="card-kicker">Mechanical design</p>
+              <h3>Robot Claw v1</h3>
+              <p>Early servo-driven claw focused on simplicity and learning through testing.</p>
+            </div>
           </article>
-
 
           <article
             class="card clickable"
             data-title="Robot Claw v2"
             data-desc="Improved version of the robotic claw."
             data-details="Key details:
-          • Stronger geometry
-          • Improved grip reliability
-          • Refined servo placement
-          • Based on lessons from v1"
+- Stronger geometry
+- Improved grip reliability
+- Refined servo placement
+- Based on lessons from v1"
             data-image="assets/clawV2.jpg"
           >
             <div class="thumb">
               <img src="assets/clawV2.jpg" alt="Robot Claw v2 thumbnail" />
             </div>
-            <h3>Robot Claw v2</h3>
-            <p>Click to view details</p>
+            <div class="card-body">
+              <p class="card-kicker">Iteration</p>
+              <h3>Robot Claw v2</h3>
+              <p>Refined claw geometry with improved grip reliability and stronger structure.</p>
+            </div>
           </article>
-
         </div>
       </section>
 
-      <!-- 3D PRINTING SECTION -->
       <section id="prints" class="container section">
-        <h2>3D Printing</h2>
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">3D printing</p>
+            <h2>Printed Parts</h2>
+          </div>
+          <p>
+            Small functional and decorative prints showing practical CAD and print preparation.
+          </p>
+        </div>
 
-        <div class="grid">
+        <div class="project-grid compact">
           <article
             class="card clickable clamp-card"
             data-title="Desk Clamp"
             data-desc="Functional 3D printed desk clamp."
             data-details="Key details:
-            • Fully 3D printed functional part
-            • Designed for strength and print reliability
-            • Optimised geometry for clamping force
-            • Suitable for desks and workbenches
-            • Focus on practical, everyday use"
+- Fully 3D printed functional part
+- Designed for strength and print reliability
+- Optimised geometry for clamping force
+- Suitable for desks and workbenches
+- Focus on practical, everyday use"
             data-image="assets/clamp.png"
-            >
+          >
             <div class="thumb">
               <img src="assets/clamp.png" alt="Desk Clamp" />
             </div>
-            <h3>Clamp</h3>
-            <p>Click to view details</p>
+            <div class="card-body">
+              <p class="card-kicker">Functional print</p>
+              <h3>Clamp</h3>
+              <p>Practical printed clamp designed around strength and reliable fabrication.</p>
+            </div>
           </article>
-
 
           <article
             class="card clickable"
             data-title="Rose"
             data-desc="Decorative 3D printed rose."
             data-details="Key details:
-            • Decorative single-piece print
-            • Designed for clean surface finish
-            • Minimal or no support material required
-            • Focus on aesthetic-focused CAD design
-            • Suitable for display or gifting"
+- Decorative single-piece print
+- Designed for clean surface finish
+- Minimal or no support material required
+- Focus on aesthetic-focused CAD design
+- Suitable for display or gifting"
             data-image="assets/rose.jpg"
-           >
+          >
             <div class="thumb">
               <img src="assets/rose.jpg" alt="Rose" />
             </div>
-            <h3>Rose</h3>
-            <p>Click to view details</p>
+            <div class="card-body">
+              <p class="card-kicker">Decorative print</p>
+              <h3>Rose</h3>
+              <p>Clean display print with a focus on form and surface finish.</p>
+            </div>
           </article>
-
 
           <article
             class="card clickable"
             data-title="Keychain"
             data-desc="Simple and durable 3D printed keychain."
             data-details="Key details:
-            • Compact everyday accessory
-            • Optimised for fast and reliable printing
-            • Lightweight and material-efficient
-            • Designed for durability
-            • Easily customisable"
+- Compact everyday accessory
+- Optimised for fast and reliable printing
+- Lightweight and material-efficient
+- Designed for durability
+- Easily customisable"
             data-image="assets/keychain.jpg"
-            >
+          >
             <div class="thumb">
               <img src="assets/keychain.jpg" alt="Keychain" />
             </div>
-            <h3>Keychain</h3>
-            <p>Click to view details</p>
+            <div class="card-body">
+              <p class="card-kicker">Accessory</p>
+              <h3>Keychain</h3>
+              <p>Compact printed accessory designed for quick, durable production.</p>
+            </div>
           </article>
-
         </div>
       </section>
-
+    </main>
 
     <footer class="container footer">
-      <small>© <span id="year"></span> E-Creates</small>
+      <small>&copy; <span id="year"></span> E-Creates</small>
     </footer>
-    <!-- MODAL (one reusable popup) -->
-    <div class="modal" id="modal" aria-hidden="true">
-    <div class="modal-backdrop" data-close="true"></div>
 
-    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-        <button class="modal-close" aria-label="Close popup" data-close="true">✕</button>
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close="true"></div>
+
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" aria-label="Close popup" data-close="true">x</button>
 
         <div class="modal-content">
-        <div class="modal-image-wrap">
+          <div class="modal-image-wrap" id="modalImageWrap">
             <img id="modalImage" src="" alt="" />
-        </div>
+            <div class="modal-placeholder" id="modalPlaceholder">Image placeholder</div>
+          </div>
 
-        <div class="modal-text">
+          <div class="modal-text">
             <h3 id="modalTitle"></h3>
             <p id="modalDesc" class="muted"></p>
             <pre id="modalDetails" class="modal-details"></pre>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
-    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
