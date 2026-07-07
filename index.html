@@ -6,7 +6,7 @@
     <title>E-Creates | Robotics and Product Portfolio</title>
     <meta
       name="description"
-      content="E-Creates is Ethan's robotics, CAD, electronics, software, and 3D printing portfolio, featuring practical prototypes including Buddi and Panzer."
+      content="E-Creates is Ethan's robotics, CAD, electronics, software, and 3D printing portfolio, showing practical prototypes including Buddi and Panzer."
     />
     <meta name="author" content="Ethan" />
     <link rel="icon" type="image/png" href="assets/ec.png" />
@@ -52,16 +52,17 @@
           <a href="index.html#skills">Skills</a>
           <a href="index.html#projects">Projects</a>
           <a href="index.html#prints">3D Prints</a>
+          <a href="services.html">Services</a>
           <a href="about.html#contact">Contact</a>
         </nav>
       </div>
     </header>
 
-    <main id="home">
+    <main id="home" class="prototype-page">
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Robotics - CAD - Prototyping</p>
+            <p class="eyebrow">Robotics - CAD - Prototype log</p>
             <h1>Designing practical ideas into working prototypes.</h1>
             <p class="hero-subtitle">
               E-Creates is my portfolio of robotics, product design, electronics, software,
@@ -76,25 +77,105 @@
               <img src="assets/ec.png" alt="" class="profile-logo" aria-hidden="true" />
             </div>
             <div class="hero-actions">
-              <a class="btn primary" href="#projects">View projects</a>
-              <a class="btn secondary" href="about.html#contact">Get in touch</a>
-            </div>
-          </div>
-
-          <div class="hero-showcase" aria-label="Featured work preview">
-            <img src="assets/buddi.jpg" alt="Buddi desk robot project" />
-            <div class="showcase-caption">
-              <span>Featured project</span>
-              <strong>Buddi</strong>
+              <a class="btn primary" href="#case-study">View case study</a>
+              <a class="btn secondary" href="services.html">Freelance services</a>
             </div>
           </div>
         </div>
       </section>
 
+
+      <section id="case-study" class="container section case-study-section">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Case study</p>
+            <h2>Buddi</h2>
+          </div>
+          <p>
+            A compact desk robot project showing CAD design, embedded control, expressive interaction,
+            and iterative prototyping in one build.
+          </p>
+        </div>
+
+        <article
+          class="case-study-card clickable"
+          data-title="Buddi"
+          data-desc="Desk bot companion with expressive interaction."
+          data-stage="Prototype"
+          data-tools="ESP32, OLED, CAD"
+          data-problem="Create a compact robotic companion platform that could express simple emotions, sit comfortably on a desk, and leave room for future interaction work."
+          data-role="Concept, CAD direction, electronics planning, embedded control approach, physical prototyping, and iteration planning."
+          data-outcome="Built as a compact companion robot platform for testing expressive interaction, modular attachments, and future expansion."
+          data-decisions="Kept the form factor desk-friendly|Used an OLED display for clear expressive feedback|Designed the platform around future modular attachments|Prioritised room for iteration over a one-off final shell"
+          data-learned="Small robots need careful internal space planning|Display placement changes the perceived personality of the product|Mechanical access is important when electronics are still evolving"
+          data-details="Key details:
+- ESP32-based control
+- OLED display for facial expressions
+- Compact desk-friendly form factor
+- Modular magnetic attachments
+- Designed for future expansion and interaction"
+          data-image="assets/buddi.jpg"
+        >
+          <div class="case-study-media">
+            <img src="assets/buddi.jpg" alt="Buddi desk robot project" />
+          </div>
+          <div class="case-study-copy">
+            <p class="card-kicker">Robotics prototype</p>
+            <h3>Expressive desk companion robot</h3>
+            <p>
+              Buddi demonstrates practical engineering across enclosure design, embedded electronics,
+              interaction design, and build iteration. It is the clearest example of the kind of
+              robotics work I want to keep developing.
+            </p>
+            <div class="case-study-stats" aria-label="Project highlights">
+              <span>ESP32</span>
+              <span>OLED UI</span>
+              <span>CAD-led build</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="capabilities" class="container section capabilities-section">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">What I can do</p>
+            <h2>Engineering support from idea to prototype.</h2>
+          </div>
+          <p>
+            I combine CAD, electronics, robotics, software, and 3D printing to turn early concepts
+            into testable physical builds.
+          </p>
+        </div>
+
+        <div class="capability-grid">
+          <article>
+            <h3>Robotics Prototypes</h3>
+            <p>Small robotic platforms, mechanisms, expressive devices, and proof-of-concept builds.</p>
+          </article>
+          <article>
+            <h3>CAD and Mechanical Design</h3>
+            <p>Parts, enclosures, brackets, mounts, mechanisms, and designs prepared for fabrication.</p>
+          </article>
+          <article>
+            <h3>Electronics Prototyping</h3>
+            <p>Microcontroller projects, sensor integration, wiring plans, test circuits, and iteration support.</p>
+          </article>
+          <article>
+            <h3>Software Development</h3>
+            <p>Embedded logic, control behaviour, web tools, project interfaces, and build documentation.</p>
+          </article>
+        </div>
+      </section>
       <section id="skills" class="container section skills-section">
-        <div class="section-heading">
-          <p class="eyebrow">Capabilities</p>
-          <h2>My Skills</h2>
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Skills and tools</p>
+            <h2>Specific proof of capability.</h2>
+          </div>
+          <p>
+            The core skills are supported by practical tools, build processes, and hands-on testing.
+          </p>
         </div>
 
         <div class="skill-bubbles" aria-label="Skills">
@@ -104,12 +185,54 @@
           <span>Mechanical designs</span>
           <span>Software development</span>
         </div>
+
+        <div class="tool-grid" aria-label="Tools and process">
+          <article>
+            <span>CAD / Design</span>
+            <strong>Fusion 360, mechanical assemblies, print-ready parts</strong>
+          </article>
+          <article>
+            <span>Electronics</span>
+            <strong>ESP32, Arduino-style prototyping, soldering, sensor wiring</strong>
+          </article>
+          <article>
+            <span>Fabrication</span>
+            <strong>FDM 3D printing, tolerancing, fit checks, iteration cycles</strong>
+          </article>
+          <article>
+            <span>Software</span>
+            <strong>Embedded logic, Python/C-style development, web interfaces</strong>
+          </article>
+        </div>
+      </section>
+
+      <section id="services-preview" class="container section services-preview">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Freelance direction</p>
+            <h2>Services for makers, students, and early-stage ideas.</h2>
+          </div>
+          <p>
+            Alongside employment-focused portfolio work, I can support small custom projects that need
+            CAD, prototyping, 3D printing, or robotics thinking.
+          </p>
+        </div>
+
+        <div class="service-strip">
+          <span>Prototype planning</span>
+          <span>CAD part design</span>
+          <span>3D printed components</span>
+          <span>Electronics support</span>
+          <span>Robotics concepts</span>
+        </div>
+
+        <a class="btn primary" href="services.html">View services</a>
       </section>
 
       <section id="projects" class="container section">
         <div class="section-heading split">
           <div>
-            <p class="eyebrow">Selected work</p>
+            <p class="eyebrow">Selected mechanisms</p>
             <h2>Projects</h2>
           </div>
           <p>
@@ -122,6 +245,13 @@
             class="card clickable"
             data-title="Buddi"
             data-desc="Desk bot companion with expressive interaction."
+            data-stage="Prototype"
+            data-tools="ESP32, OLED, CAD"
+            data-problem="Create a compact robotic companion platform that could express simple emotions, sit comfortably on a desk, and leave room for future interaction work."
+            data-role="Concept, CAD direction, electronics planning, embedded control approach, physical prototyping, and iteration planning."
+            data-decisions="Kept the form factor desk-friendly|Used an OLED display for clear expressive feedback|Designed the platform around future modular attachments|Prioritised room for iteration over a one-off final shell"
+            data-learned="Small robots need careful internal space planning|Display placement changes the perceived personality of the product|Mechanical access is important when electronics are still evolving"
+            data-outcome="Built as a compact companion robot platform for testing expressive interaction, modular attachments, and future expansion."
             data-details="Key details:
 - ESP32-based control
 - OLED display for facial expressions
@@ -144,6 +274,13 @@
             class="card clickable"
             data-title="Hivemind"
             data-desc="Coming soon"
+            data-stage="Planning"
+            data-tools="Robotics, CAD, electronics"
+            data-problem="Create a dedicated space for a future robotics project before final images and build details are ready."
+            data-role="Planning, project framing, and portfolio structure."
+            data-decisions="Added a placeholder image state|Kept the wording flexible for future updates|Prepared the modal for fuller technical detail later"
+            data-learned="A project can be presented early if the status is clear|Placeholders should look intentional rather than unfinished"
+            data-outcome="This space is ready for the project image, build notes, and technical details once the project develops further."
             data-details="Key details:
 - Coming soon"
             data-image=""
@@ -162,6 +299,13 @@
             class="card clickable"
             data-title="Panzer"
             data-desc="Tracked robot platform prototype."
+            data-stage="Prototype"
+            data-tools="CAD, tracks, gearing"
+            data-problem="Explore a compact tracked platform with enough stability and torque for future robotic development."
+            data-role="Mechanical prototyping, chassis layout, track tension iteration, and build evaluation."
+            data-decisions="Focused on a compact tracked footprint|Prioritised torque and stability|Added modular mounting points for later hardware|Iterated around gearing and track tension"
+            data-learned="Weight distribution strongly affects tracked movement|Small mechanical changes can have large reliability effects|Modular mounting makes future testing easier"
+            data-outcome="Used to explore compact tracked movement, chassis stability, and mechanical trade-offs around gearing and weight distribution."
             data-details="Key details:
 - Compact tracked chassis
 - Focus on torque and stability
@@ -184,6 +328,13 @@
             class="card clickable"
             data-title="Cat Mood Lamp"
             data-desc="Decorative lamp with expressive design."
+            data-stage="Finished build"
+            data-tools="3D printing, LEDs, CAD"
+            data-problem="Create a decorative product-style print that combines character, lighting, and clean fabrication."
+            data-role="Form development, 3D print preparation, LED diffusion thinking, and finish refinement."
+            data-decisions="Used a diffused lighting approach|Focused on the housing as a finished object|Balanced aesthetics with print quality"
+            data-learned="Lighting changes how a printed object is perceived|Surface finish matters more on decorative products|Simple electronics can elevate a static print"
+            data-outcome="A decorative print that combines lighting, surface finish, and character-led product design."
             data-details="Key details:
 - 3D printed housing
 - Diffused LED lighting
@@ -205,6 +356,13 @@
             class="card clickable"
             data-title="Robot Claw v1"
             data-desc="First iteration of a servo-driven robotic claw."
+            data-stage="Iteration 1"
+            data-tools="Servo, CAD, 3D printing"
+            data-problem="Test a simple servo-driven gripping mechanism and understand the first mechanical weak points."
+            data-role="Mechanism layout, CAD modelling, 3D printing, servo integration, and test evaluation."
+            data-decisions="Used single-servo actuation|Kept the geometry simple|Treated the first version as a learning prototype"
+            data-learned="First prototypes should expose weaknesses quickly|Grip reliability depends on geometry as much as force|Printed mechanisms need generous tolerance planning"
+            data-outcome="An early mechanical test that helped identify geometry and strength improvements for the next version."
             data-details="Key details:
 - Fully 3D printed
 - Single servo actuation
@@ -226,6 +384,13 @@
             class="card clickable"
             data-title="Robot Claw v2"
             data-desc="Improved version of the robotic claw."
+            data-stage="Iteration 2"
+            data-tools="Servo, CAD, 3D printing"
+            data-problem="Improve the first claw design by strengthening the geometry and making the grip more reliable."
+            data-role="Design iteration, geometry refinement, servo placement updates, and prototype comparison."
+            data-decisions="Strengthened the claw structure|Improved servo placement|Refined grip surfaces based on v1 results"
+            data-learned="Iteration is faster when the first version is documented|Small geometry changes can improve reliability|A stronger mechanism still needs careful packaging"
+            data-outcome="A refined version focused on stronger geometry, better grip reliability, and cleaner servo placement."
             data-details="Key details:
 - Stronger geometry
 - Improved grip reliability
@@ -248,7 +413,7 @@
       <section id="prints" class="container section">
         <div class="section-heading split">
           <div>
-            <p class="eyebrow">3D printing</p>
+            <p class="eyebrow">Fabrication notes</p>
             <h2>Printed Parts</h2>
           </div>
           <p>
@@ -261,6 +426,13 @@
             class="card clickable clamp-card"
             data-title="Desk Clamp"
             data-desc="Functional 3D printed desk clamp."
+            data-stage="Functional print"
+            data-tools="CAD, 3D printing"
+            data-problem="Design a functional printed clamp that can be useful on a desk or workbench."
+            data-role="CAD modelling, print-oriented design, strength consideration, and fit-for-use testing."
+            data-decisions="Designed around clamping force|Used printable geometry|Kept the part practical and material-conscious"
+            data-learned="Functional prints need strength in the right direction|Threaded or clamping parts need careful tolerances|Everyday parts are good tests of print reliability"
+            data-outcome="Designed as a practical everyday part with attention to strength, clamping force, and reliable printing."
             data-details="Key details:
 - Fully 3D printed functional part
 - Designed for strength and print reliability
@@ -283,6 +455,13 @@
             class="card clickable"
             data-title="Rose"
             data-desc="Decorative 3D printed rose."
+            data-stage="Finished print"
+            data-tools="CAD, 3D printing"
+            data-problem="Produce a clean decorative print with an aesthetic form and reliable print setup."
+            data-role="CAD preparation, print optimisation, and surface-quality evaluation."
+            data-decisions="Reduced support requirements|Focused on visible surface quality|Kept the part display-friendly"
+            data-learned="Decorative parts reward clean geometry|Print orientation can define the final look|Material efficiency still matters on simple objects"
+            data-outcome="A display-focused print exploring clean surfaces, support-light design, and decorative form."
             data-details="Key details:
 - Decorative single-piece print
 - Designed for clean surface finish
@@ -305,6 +484,13 @@
             class="card clickable"
             data-title="Keychain"
             data-desc="Simple and durable 3D printed keychain."
+            data-stage="Finished print"
+            data-tools="CAD, 3D printing"
+            data-problem="Create a small durable accessory that can be printed quickly and customised later."
+            data-role="CAD design, print optimisation, and durability-focused detailing."
+            data-decisions="Kept the form lightweight|Designed for fast production|Allowed room for future customisation"
+            data-learned="Small parts still need durability checks|Simple accessories are useful for testing repeatability|Fast prints can still look polished"
+            data-outcome="A compact accessory focused on quick production, durability, and easy future customisation."
             data-details="Key details:
 - Compact everyday accessory
 - Optimised for fast and reliable printing
@@ -343,9 +529,46 @@
           </div>
 
           <div class="modal-text">
+            <p class="modal-kicker" id="modalKicker">Project overview</p>
             <h3 id="modalTitle"></h3>
             <p id="modalDesc" class="muted"></p>
-            <pre id="modalDetails" class="modal-details"></pre>
+
+            <dl class="modal-meta" aria-label="Project information">
+              <div>
+                <dt>Stage</dt>
+                <dd id="modalStage"></dd>
+              </div>
+              <div>
+                <dt>Focus</dt>
+                <dd id="modalTools"></dd>
+              </div>
+            </dl>
+
+            <div class="modal-section">
+              <h4>Problem / Goal</h4>
+              <p id="modalProblem" class="modal-outcome"></p>
+            </div>
+
+            <div class="modal-section">
+              <h4>My Role</h4>
+              <p id="modalRole" class="modal-outcome"></p>
+            </div>
+
+            <div class="modal-section">
+              <h4>Key Details</h4>
+              <ul id="modalDetails" class="modal-details"></ul>
+            </div>
+
+            <div class="modal-section">
+              <h4>Design Decisions</h4>
+              <ul id="modalDecisions" class="modal-details"></ul>
+            </div>
+
+            <div class="modal-section">
+              <h4>Learning / Outcome</h4>
+              <p id="modalOutcome" class="modal-outcome"></p>
+              <ul id="modalLearned" class="modal-details compact-list"></ul>
+            </div>
           </div>
         </div>
       </div>
