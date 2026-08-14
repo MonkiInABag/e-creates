@@ -44,7 +44,7 @@ function renderList(target, items) {
 }
 
 // Open modal with content
-function openModal({ title, desc, details, image, stage, tools, outcome, problem, role, decisions, learned }) {
+function openModal({ title, desc, details, image, imageFit, stage, tools, outcome, problem, role, decisions, learned }) {
   if (!modal) return;
 
   modalTitle.textContent = title || "";
@@ -63,9 +63,11 @@ function openModal({ title, desc, details, image, stage, tools, outcome, problem
   if (image) {
     modalImage.src = image;
     modalImageWrap.classList.remove("is-placeholder");
+    modalImageWrap.classList.toggle("is-contained", imageFit === "contain");
   } else {
     modalImage.removeAttribute("src");
     modalImageWrap.classList.add("is-placeholder");
+    modalImageWrap.classList.remove("is-contained");
   }
 
   modal.classList.add("is-open");
@@ -90,6 +92,7 @@ document.querySelectorAll(".clickable").forEach((card) => {
       desc: card.dataset.desc,
       details: card.dataset.details,
       image: card.dataset.image,
+      imageFit: card.dataset.imageFit,
       stage: card.dataset.stage,
       tools: card.dataset.tools,
       outcome: card.dataset.outcome,

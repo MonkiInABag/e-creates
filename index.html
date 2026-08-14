@@ -63,7 +63,7 @@
         <div class="container hero-grid">
           <div class="hero-copy">
             <p class="eyebrow">Robotics - CAD - Prototype log</p>
-            <h1>Designing practical ideas into working prototypes.</h1>
+            <h1>Creating ideas, One layer at a time.</h1>
             <p class="hero-subtitle">
               E-Creates is my portfolio of robotics, product design, electronics, software,
               and 3D printed builds, developed through hands-on experimentation and engineering study.
@@ -114,7 +114,7 @@
 - Compact desk-friendly form factor
 - Modular magnetic attachments
 - Designed for future expansion and interaction"
-          data-image="assets/buddi.jpg"
+          data-image="assets/buddi2.jpg"
         >
           <div class="case-study-media">
             <img src="assets/buddi.jpg" alt="Buddi desk robot project" />
@@ -258,7 +258,7 @@
 - Compact desk-friendly form factor
 - Modular magnetic attachments
 - Designed for future expansion and interaction"
-            data-image="assets/buddi.jpg"
+            data-image="assets/buddi2.jpg"
           >
             <div class="thumb">
               <img src="assets/buddi.jpg" alt="Buddi thumbnail" />
@@ -273,25 +273,60 @@
           <article
             class="card clickable"
             data-title="Hivemind"
-            data-desc="Coming soon"
-            data-stage="Planning"
-            data-tools="Robotics, CAD, electronics"
-            data-problem="Create a dedicated space for a future robotics project before final images and build details are ready."
-            data-role="Planning, project framing, and portfolio structure."
-            data-decisions="Added a placeholder image state|Kept the wording flexible for future updates|Prepared the modal for fuller technical detail later"
-            data-learned="A project can be presented early if the status is clear|Placeholders should look intentional rather than unfinished"
-            data-outcome="This space is ready for the project image, build notes, and technical details once the project develops further."
+            data-desc="Lightweight Linux server built from a stripped laptop motherboard."
+            data-stage="Working server build"
+            data-tools="Linux, laptop motherboard, CAD, 3D printing, local Llama"
+            data-problem="Turn an old laptop motherboard into a lightweight always-available server that can act as the main compute point for future robotics and software projects."
+            data-role="Laptop teardown, CAD enclosure design, 3D printed casing, Linux setup, remote access configuration, and planning the Buddi connection."
+            data-decisions="Stripped the laptop down to the motherboard|Built a 3D modelled casing around the hardware|Ran Linux for remote access and project hosting|Designed it as the central compute point for future builds|Planned a Buddi connection for locally hosted Llama personality features"
+            data-learned="Repurposed laptop hardware can become a useful project server|Cooling and port access matter when designing a custom enclosure|Local AI hosting needs more compute than small robots can carry onboard|Remote access makes the server useful without needing a dedicated screen"
+            data-outcome="Hivemind now acts as a lightweight Linux server for future projects, with remote access and a planned connection to Buddi so a locally hosted Llama model can give the robot higher-level personality features."
             data-details="Key details:
-- Coming soon"
-            data-image=""
+- Stripped old laptop down to its motherboard
+- Custom 3D modelled and printed casing
+- Runs Linux as a lightweight project server
+- Accessible remotely
+- Designed as the main compute point for future projects
+- Supports planned Buddi connection through a locally hosted Llama model"
+            data-image="assets/hivemind-2.jpg"
+            data-image-fit="contain"
           >
-            <div class="thumb placeholder-thumb">
-              <span>Hivemind</span>
+            <div class="thumb">
+              <img src="assets/hivemind-1.jpg" alt="Hivemind lightweight Linux server casing" />
             </div>
             <div class="card-body">
-              <p class="card-kicker">Coming soon</p>
+              <p class="card-kicker">Linux server</p>
               <h3>Hivemind</h3>
-              <p>A new project space with a placeholder image area ready for your final visuals.</p>
+              <p>Repurposed laptop motherboard in a custom printed case, running Linux for remote project hosting.</p>
+            </div>
+          </article>
+
+          <article
+            class="card clickable"
+            data-title="Magic Mouse"
+            data-desc="Custom single-click mouse using an ESP and copper touch pads."
+            data-stage="Working prototype"
+            data-tools="ESP, Bambu Lab mouse PCB, copper pads"
+            data-problem="Recreate normal mouse behaviour with a custom shell, a single physical clicker, and copper pads that can trigger artificial mouse input signals."
+            data-role="Electronics integration, mouse PCB adaptation, wiring, input testing, enclosure work, and behaviour tuning."
+            data-decisions="Latched an ESP onto the Bambu Lab mouse PCB|Used copper pads to replicate normal mouse input behaviour|Kept the control surface simple with one main clicker|Designed the build so the electronics remain accessible for testing"
+            data-learned="Mouse inputs need clean, repeatable signal behaviour|Small enclosures make wiring and access planning important|Copper touch pads can stand in for conventional controls when the input logic is tuned carefully"
+            data-outcome="Built as a custom mouse prototype that combines a Bambu Lab mouse PCB, ESP-based input generation, copper pads, and a simplified click mechanism."
+            data-details="Key details:
+- ESP generates artificial mouse input signals
+- Bambu Lab mouse PCB used as the base
+- Single physical clicker
+- Copper pads replicate normal mouse behaviour
+- Custom enclosure with accessible internal electronics"
+            data-image="assets/magic-mouse-internals.jpeg"
+          >
+            <div class="thumb">
+              <img src="assets/magic-mouse.jpeg" alt="Magic Mouse custom mouse prototype" />
+            </div>
+            <div class="card-body">
+              <p class="card-kicker">Electronics prototype</p>
+              <h3>Magic Mouse</h3>
+              <p>Custom mouse build using an ESP, Bambu Lab mouse PCB, copper pads, and a single clicker.</p>
             </div>
           </article>
 
@@ -514,6 +549,36 @@
 
     <footer class="container footer">
       <small>&copy; <span id="year"></span> E-Creates</small>
+      <div class="social-links">
+        <a
+          class="social-icon-link"
+          href="https://www.instagram.com/e_creates02/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="E-Creates on Instagram"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="1.1" />
+          </svg>
+        </a>
+        <a
+          class="social-icon-link"
+          href="https://www.fiverr.com/s/bd4V3ak"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="E-Creates on Fiverr"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="16.4" cy="6.2" r="1.5" />
+            <path d="M7.1 19.2h9.8" />
+            <path d="M8.8 19.2V10.1c0-3 1.8-4.9 4.9-4.9" />
+            <path d="M7.1 10.2h8.7" />
+            <path d="M15.8 10.2v9" />
+          </svg>
+        </a>
+      </div>
     </footer>
 
     <div class="modal" id="modal" aria-hidden="true">

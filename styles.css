@@ -407,10 +407,49 @@ img {
 }
 
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   padding: 30px 0 50px;
   color: var(--muted);
   border-top: 1px solid var(--line);
   margin-top: 24px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent-strong);
+  background: var(--surface);
+  box-shadow: 0 10px 24px rgba(21, 45, 68, 0.08);
+  transition: transform 160ms ease, box-shadow 160ms ease, color 160ms ease;
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus-visible {
+  color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(21, 45, 68, 0.14);
+}
+
+.social-icon-link svg {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
 }
 
 .modal {
@@ -1906,4 +1945,67 @@ body .prototype-page::before,
 
 .hero h1 {
   max-width: 13.5ch;
+}
+
+/* Project overview fixed-image layout */
+.modal-panel {
+  max-height: calc(100dvh - 48px);
+  margin: 24px auto;
+  overflow: hidden;
+}
+
+.modal-content {
+  height: calc(100dvh - 48px);
+  min-height: 0;
+  max-height: calc(100dvh - 48px);
+}
+
+.modal-image-wrap {
+  height: 100%;
+  min-height: clamp(320px, 58vh, 560px);
+}
+
+.modal-image-wrap.is-contained {
+  display: grid;
+  place-items: center;
+  padding: 18px;
+}
+
+.modal-image-wrap.is-contained img {
+  height: auto;
+  max-height: calc(100dvh - 84px);
+  object-fit: contain;
+}
+
+.modal-text {
+  max-height: calc(100dvh - 48px);
+  overflow-y: auto;
+  padding-bottom: 44px;
+}
+
+@media (max-width: 700px) {
+  .modal-panel {
+    width: min(94%, 560px);
+    max-height: calc(100dvh - 24px);
+    margin: 12px auto;
+    overflow-y: auto;
+  }
+
+  .modal-content {
+    height: auto;
+    max-height: none;
+    min-height: 0;
+    overflow: visible;
+  }
+
+  .modal-image-wrap {
+    height: auto;
+    min-height: 240px;
+  }
+
+  .modal-text {
+    max-height: none;
+    overflow: visible;
+    padding-bottom: 36px;
+  }
 }
