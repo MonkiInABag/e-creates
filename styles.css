@@ -1957,25 +1957,6 @@ body .prototype-page::before,
   object-position: center;
 }
 
-.hero-workbench .showcase-caption {
-  display: grid;
-  gap: 3px;
-  padding: 13px 15px;
-  color: var(--text);
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.72);
-  border-radius: 8px;
-  backdrop-filter: blur(8px);
-}
-
-.hero-workbench .showcase-caption span {
-  color: var(--accent);
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
 @media (max-width: 900px) {
   .hero-grid {
     grid-template-columns: 1fr;
