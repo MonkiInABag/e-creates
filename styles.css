@@ -1982,10 +1982,12 @@ body .prototype-page::before,
   }
 
   .hero-workbench {
-    width: min(calc(100% - 24px), 620px);
+    width: min(calc(100% - 32px), 610px);
     aspect-ratio: 16 / 10;
-    justify-self: center;
-    margin-inline: auto;
+    place-self: center;
+    margin: 0;
+    box-sizing: border-box;
+    transform: translateX(-6px);
   }
 }
 
