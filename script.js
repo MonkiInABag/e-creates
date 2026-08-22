@@ -9,6 +9,7 @@ const modalDesc = document.getElementById("modalDesc");
 const modalDetails = document.getElementById("modalDetails");
 const modalImage = document.getElementById("modalImage");
 const modalImageWrap = document.getElementById("modalImageWrap");
+const modalGallery = document.getElementById("modalGallery");
 const modalStage = document.getElementById("modalStage");
 const modalTools = document.getElementById("modalTools");
 const modalOutcome = document.getElementById("modalOutcome");
@@ -44,7 +45,7 @@ function renderList(target, items) {
 }
 
 // Open modal with content
-function openModal({ title, desc, details, image, imageFit, stage, tools, outcome, problem, role, decisions, learned }) {
+function openModal({ title, desc, details, image, images, imageFit, stage, tools, outcome, problem, role, decisions, learned }) {
   if (!modal) return;
 
   modalTitle.textContent = title || "";
@@ -70,6 +71,31 @@ function openModal({ title, desc, details, image, imageFit, stage, tools, outcom
     modalImageWrap.classList.remove("is-contained");
   }
 
+  if (modalGallery) {
+    const galleryImages = getPipeItems(images);
+    modalGallery.innerHTML = "";
+    modalGallery.hidden = galleryImages.length < 2;
+
+    galleryImages.forEach((src, index) => {
+      const button = document.createElement("button");
+      const thumbnail = document.createElement("img");
+      button.type = "button";
+      button.className = `modal-gallery-thumb${index === 0 ? " is-active" : ""}`;
+      button.setAttribute("aria-label", `View ${title || "project"} image ${index + 1}`);
+      thumbnail.src = src;
+      thumbnail.alt = "";
+      button.appendChild(thumbnail);
+      button.addEventListener("click", () => {
+        modalImage.src = src;
+        modalImage.alt = `${title || "Project"} image ${index + 1}`;
+        modalGallery.querySelectorAll(".modal-gallery-thumb").forEach((thumb) => {
+          thumb.classList.toggle("is-active", thumb === button);
+        });
+      });
+      modalGallery.appendChild(button);
+    });
+  }
+
   modal.classList.add("is-open");
   modal.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
@@ -92,6 +118,7 @@ document.querySelectorAll(".clickable").forEach((card) => {
       desc: card.dataset.desc,
       details: card.dataset.details,
       image: card.dataset.image,
+      images: card.dataset.images,
       imageFit: card.dataset.imageFit,
       stage: card.dataset.stage,
       tools: card.dataset.tools,

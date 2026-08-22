@@ -81,6 +81,16 @@
               <a class="btn secondary" href="services.html">Freelance services</a>
             </div>
           </div>
+          <figure class="hero-showcase hero-workbench">
+            <img
+              src="assets/electronics-workbench.jpg"
+              alt="Microcontrollers, motor-control boards, a servo, and prototyping components arranged on a cutting mat"
+            />
+            <figcaption class="showcase-caption">
+              <span>On the workbench</span>
+              <strong>Electronics ready for the next prototype</strong>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -114,7 +124,8 @@
 - Compact desk-friendly form factor
 - Modular magnetic attachments
 - Designed for future expansion and interaction"
-          data-image="assets/buddi2.jpg"
+          data-image="assets/buddi.jpg"
+          data-images="assets/buddi.jpg|assets/buddi2.jpg"
         >
           <div class="case-study-media">
             <img src="assets/buddi.jpg" alt="Buddi desk robot project" />
@@ -258,7 +269,8 @@
 - Compact desk-friendly form factor
 - Modular magnetic attachments
 - Designed for future expansion and interaction"
-            data-image="assets/buddi2.jpg"
+            data-image="assets/buddi.jpg"
+            data-images="assets/buddi.jpg|assets/buddi2.jpg"
           >
             <div class="thumb">
               <img src="assets/buddi.jpg" alt="Buddi thumbnail" />
@@ -288,7 +300,8 @@
 - Accessible remotely
 - Designed as the main compute point for future projects
 - Supports planned Buddi connection through a locally hosted Llama model"
-            data-image="assets/hivemind-2.jpg"
+            data-image="assets/hivemind-1.jpg"
+            data-images="assets/hivemind-1.jpg|assets/hivemind-2.jpg"
             data-image-fit="contain"
           >
             <div class="thumb">
@@ -318,7 +331,8 @@
 - Single physical clicker
 - Copper pads replicate normal mouse behaviour
 - Custom enclosure with accessible internal electronics"
-            data-image="assets/magic-mouse-internals.jpeg"
+            data-image="assets/magic-mouse.jpeg"
+            data-images="assets/magic-mouse.jpeg|assets/magic-mouse-internals.jpeg"
           >
             <div class="thumb">
               <img src="assets/magic-mouse.jpeg" alt="Magic Mouse custom mouse prototype" />
@@ -458,6 +472,40 @@
 
         <div class="project-grid compact">
           <article
+            class="card clickable e-shell-card"
+            data-title="E-Shell"
+            data-desc="A modular attachment layer that turns the back of a laptop into a customisable platform for everyday tools and accessories."
+            data-stage="Working prototype"
+            data-tools="CAD, 3D printing, mechanical design"
+            data-problem="Create a low-profile, adaptable way to carry and organise laptop accessories without permanently modifying the laptop or committing to a fixed layout."
+            data-role="Concept development, CAD modelling, locking-system design, print preparation, assembly, fit testing, and prototype iteration."
+            data-decisions="Used a repeatable keyhole pattern so modules can be moved and rearranged|Designed the backplate as a thin second layer to keep the laptop portable|Used a secure mechanical lock instead of permanent attachment|Developed modules around real accessories including an external SSD and cable management"
+            data-learned="A modular grid needs consistent tolerances across every attachment point|Accessory weight and cable direction affect the best module position|Low-profile parts still need enough material around each lock to remain durable"
+            data-outcome="E-Shell demonstrates a functional second layer for a laptop, keeping accessories organised, protected, and within reach while allowing the setup to evolve as modules are added or rearranged."
+            data-details="Key details:
+- Low-profile 3D printed laptop backplate
+- Repeatable mechanical keyhole locking system
+- Modules can be attached, removed, and rearranged
+- Prototype modules include an external SSD holder and mounting plate
+- Designed for future mouse docks, cable organisers, USB hubs, and other accessories"
+            data-image="assets/e-shell-laptop.jpg"
+            data-images="assets/e-shell-laptop.jpg|assets/e-shell-cad.png|assets/e-shell-ssd.jpg"
+            data-image-fit="contain"
+          >
+            <div class="thumb">
+              <img src="assets/e-shell-laptop.jpg" alt="E-Shell attachment system fitted to the back of a laptop" />
+            </div>
+            <div class="card-body">
+              <p class="card-kicker">Modular laptop system</p>
+              <h3>E-Shell</h3>
+              <p>
+                An attachable, customisable layer for the back of a laptop, with a secure mechanical
+                locking grid for SSD holders, mouse docks, cable organisers, USB hubs, and future modules.
+              </p>
+            </div>
+          </article>
+
+          <article
             class="card clickable clamp-card"
             data-title="Desk Clamp"
             data-desc="Functional 3D printed desk clamp."
@@ -591,6 +639,7 @@
           <div class="modal-image-wrap" id="modalImageWrap">
             <img id="modalImage" src="" alt="" />
             <div class="modal-placeholder" id="modalPlaceholder">Image placeholder</div>
+            <div class="modal-gallery" id="modalGallery" aria-label="Project images"></div>
           </div>
 
           <div class="modal-text">

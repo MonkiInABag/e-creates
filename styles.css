@@ -1936,7 +1936,7 @@ body .prototype-page::before,
 
 /* Single case-study direction */
 .hero-grid {
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(380px, 0.82fr);
 }
 
 .hero-copy {
@@ -1945,6 +1945,46 @@ body .prototype-page::before,
 
 .hero h1 {
   max-width: 13.5ch;
+}
+
+.hero-workbench {
+  min-height: 0;
+  aspect-ratio: 1 / 1.04;
+}
+
+.hero-workbench img {
+  min-height: 0;
+  object-position: center;
+}
+
+.hero-workbench .showcase-caption {
+  display: grid;
+  gap: 3px;
+  padding: 13px 15px;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+}
+
+.hero-workbench .showcase-caption span {
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-workbench {
+    width: min(100%, 620px);
+    aspect-ratio: 16 / 10;
+  }
 }
 
 /* Project overview fixed-image layout */
@@ -2007,5 +2047,51 @@ body .prototype-page::before,
     max-height: none;
     overflow: visible;
     padding-bottom: 36px;
+  }
+}
+
+/* Featured printed-part system */
+.modal-gallery {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.modal-gallery[hidden] {
+  display: none;
+}
+
+.modal-gallery-thumb {
+  width: 68px;
+  height: 52px;
+  padding: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 7px;
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(7, 17, 28, 0.25);
+}
+
+.modal-gallery-thumb.is-active {
+  border-color: var(--glow);
+}
+
+.modal-gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+@media (max-width: 700px) {
+  .modal-gallery-thumb {
+    width: 58px;
+    height: 46px;
   }
 }
