@@ -45,6 +45,7 @@
   </head>
 
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <div class="container nav">
         <a class="logo" href="index.html" aria-label="E-Creates Home">
@@ -52,56 +53,47 @@
           <span>E-Creates</span>
         </a>
 
-        <nav class="nav-links" aria-label="Primary">
-          <a href="index.html#home">Home</a>
-          <a href="about.html">About</a>
-          <a href="index.html#skills">Skills</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" hidden>Menu <span aria-hidden="true">+</span></button>
+        <nav class="nav-links" id="primary-navigation" aria-label="Primary">
           <a href="index.html#projects">Projects</a>
           <a href="index.html#prints">3D Prints</a>
           <a href="services.html">Services</a>
-          <a href="about.html#contact">Contact</a>
+          <a href="about.html">About</a>
+          <a class="nav-contact" href="about.html#contact">Get in touch <span aria-hidden="true">&rarr;</span></a>
         </nav>
       </div>
     </header>
 
-    <main id="home" class="prototype-page">
-      <section class="hero">
+    <main id="main-content" class="prototype-page">
+      <section id="home" class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Robotics - CAD - Prototype log</p>
-            <h1>Creating ideas, One layer at a time.</h1>
-            <p class="hero-subtitle">
-              E-Creates is my portfolio of robotics, product design, electronics, software,
-              and 3D printed builds, developed through hands-on experimentation and engineering study.
-            </p>
-            <div class="hero-profile" aria-label="E-Creates profile">
-              <img src="assets/photo.jpg" alt="Ethan portrait" class="profile-photo" />
-              <div>
-                <span>Built by Ethan</span>
-                <strong>Robotics, CAD, electronics, and 3D printing</strong>
-              </div>
-              <img src="assets/ec.png" alt="" class="profile-logo" aria-hidden="true" />
-            </div>
+            <p class="eyebrow">Independent design &amp; engineering</p>
+            <h1>Ideas made real.<br /><span>One layer at a time.</span></h1>
+            <p class="hero-subtitle">Exploring what comes next through robotics, thoughtful design, and hands-on prototyping.</p>
             <div class="hero-actions">
-              <a class="btn primary" href="#case-study">View case study</a>
-              <a class="btn secondary" href="services.html">Freelance services</a>
+              <a class="btn primary" href="#projects">Explore my work <span aria-hidden="true">&rarr;</span></a>
+              <a class="hero-text-link" href="about.html">Meet Ethan <span aria-hidden="true">&rarr;</span></a>
             </div>
           </div>
-          <figure class="hero-showcase hero-workbench">
-            <img
-              src="assets/electronics-workbench.jpg"
-              alt="Microcontrollers, motor-control boards, a servo, and prototyping components arranged on a cutting mat"
-            />
+          <figure class="hero-showcase">
+            <img src="assets/electronics-workbench.jpg" alt="Microcontrollers, motor-control boards, a servo, and prototyping components arranged on a cutting mat" fetchpriority="high" />
+            <figcaption>From the workbench <span>Design. Build. Test. Repeat.</span></figcaption>
           </figure>
         </div>
       </section>
-
+      <div class="discipline-bar">
+        <div class="container">
+          <span>Ideas into working prototypes</span>
+          <a href="#skills">Robotics</a><a href="#skills">CAD &amp; design</a><a href="#skills">Electronics</a><a href="#prints">3D printing</a>
+        </div>
+      </div>
 
       <section id="case-study" class="container section case-study-section">
         <div class="section-heading split">
           <div>
-            <p class="eyebrow">Case study</p>
-            <h2>Buddi</h2>
+            <p class="eyebrow">Featured project / Buddi</p>
+            <h2>Small robot. Big personality.</h2>
           </div>
           <p>
             A compact desk robot project showing CAD design, embedded control, expressive interaction,
@@ -130,7 +122,7 @@
           data-images="assets/buddi.jpg|assets/buddi2.jpg"
         >
           <div class="case-study-media">
-            <img src="assets/buddi.jpg" alt="Buddi desk robot project" />
+            <img src="assets/buddi.jpg" alt="Buddi desk robot project" loading="lazy" />
           </div>
           <div class="case-study-copy">
             <p class="card-kicker">Robotics prototype</p>
@@ -140,6 +132,7 @@
               interaction design, and build iteration. It is the clearest example of the kind of
               robotics work I want to keep developing.
             </p>
+            <span class="text-link">Explore the case study <span aria-hidden="true">&rarr;</span></span>
             <div class="case-study-stats" aria-label="Project highlights">
               <span>ESP32</span>
               <span>OLED UI</span>
@@ -149,103 +142,10 @@
         </article>
       </section>
 
-      <section id="capabilities" class="container section capabilities-section">
-        <div class="section-heading split">
-          <div>
-            <p class="eyebrow">What I can do</p>
-            <h2>Engineering support from idea to prototype.</h2>
-          </div>
-          <p>
-            I combine CAD, electronics, robotics, software, and 3D printing to turn early concepts
-            into testable physical builds.
-          </p>
-        </div>
-
-        <div class="capability-grid">
-          <article>
-            <h3>Robotics Prototypes</h3>
-            <p>Small robotic platforms, mechanisms, expressive devices, and proof-of-concept builds.</p>
-          </article>
-          <article>
-            <h3>CAD and Mechanical Design</h3>
-            <p>Parts, enclosures, brackets, mounts, mechanisms, and designs prepared for fabrication.</p>
-          </article>
-          <article>
-            <h3>Electronics Prototyping</h3>
-            <p>Microcontroller projects, sensor integration, wiring plans, test circuits, and iteration support.</p>
-          </article>
-          <article>
-            <h3>Software Development</h3>
-            <p>Embedded logic, control behaviour, web tools, project interfaces, and build documentation.</p>
-          </article>
-        </div>
-      </section>
-      <section id="skills" class="container section skills-section">
-        <div class="section-heading split">
-          <div>
-            <p class="eyebrow">Skills and tools</p>
-            <h2>Specific proof of capability.</h2>
-          </div>
-          <p>
-            The core skills are supported by practical tools, build processes, and hands-on testing.
-          </p>
-        </div>
-
-        <div class="skill-bubbles" aria-label="Skills">
-          <span>CAD</span>
-          <span>Electrical prototyping</span>
-          <span>Robotics</span>
-          <span>Mechanical designs</span>
-          <span>Software development</span>
-        </div>
-
-        <div class="tool-grid" aria-label="Tools and process">
-          <article>
-            <span>CAD / Design</span>
-            <strong>Fusion 360, mechanical assemblies, print-ready parts</strong>
-          </article>
-          <article>
-            <span>Electronics</span>
-            <strong>ESP32, Arduino-style prototyping, soldering, sensor wiring</strong>
-          </article>
-          <article>
-            <span>Fabrication</span>
-            <strong>FDM 3D printing, tolerancing, fit checks, iteration cycles</strong>
-          </article>
-          <article>
-            <span>Software</span>
-            <strong>Embedded logic, Python/C-style development, web interfaces</strong>
-          </article>
-        </div>
-      </section>
-
-      <section id="services-preview" class="container section services-preview">
-        <div class="section-heading split">
-          <div>
-            <p class="eyebrow">Freelance direction</p>
-            <h2>Services for makers, students, and early-stage ideas.</h2>
-          </div>
-          <p>
-            Alongside employment-focused portfolio work, I can support small custom projects that need
-            CAD, prototyping, 3D printing, or robotics thinking.
-          </p>
-        </div>
-
-        <div class="service-strip">
-          <span>Prototype planning</span>
-          <span>CAD part design</span>
-          <span>3D printed components</span>
-          <span>Electronics support</span>
-          <span>Robotics concepts</span>
-        </div>
-
-        <a class="btn primary" href="services.html">View services</a>
-      </section>
-
       <section id="projects" class="container section">
         <div class="section-heading split">
           <div>
-            <p class="eyebrow">Selected mechanisms</p>
+            <p class="eyebrow">Selected work</p>
             <h2>Projects</h2>
           </div>
           <p>
@@ -275,7 +175,7 @@
             data-images="assets/buddi.jpg|assets/buddi2.jpg"
           >
             <div class="thumb">
-              <img src="assets/buddi.jpg" alt="Buddi thumbnail" />
+              <img src="assets/buddi.jpg" alt="Buddi thumbnail" loading="lazy" />
             </div>
             <div class="card-body">
               <p class="card-kicker">Robotics</p>
@@ -307,7 +207,7 @@
             data-image-fit="contain"
           >
             <div class="thumb">
-              <img src="assets/hivemind-1.jpg" alt="Hivemind lightweight Linux server casing" />
+              <img src="assets/hivemind-1.jpg" alt="Hivemind lightweight Linux server casing" loading="lazy" />
             </div>
             <div class="card-body">
               <p class="card-kicker">Linux server</p>
@@ -337,7 +237,7 @@
             data-images="assets/magic-mouse.jpeg|assets/magic-mouse-internals.jpeg"
           >
             <div class="thumb">
-              <img src="assets/magic-mouse.jpeg" alt="Magic Mouse custom mouse prototype" />
+              <img src="assets/magic-mouse.jpeg" alt="Magic Mouse custom mouse prototype" loading="lazy" />
             </div>
             <div class="card-body">
               <p class="card-kicker">Electronics prototype</p>
@@ -366,7 +266,7 @@
             data-image="assets/panzer.jpg"
           >
             <div class="thumb">
-              <img src="assets/panzer.jpg" alt="Panzer project thumbnail" />
+              <img src="assets/panzer.jpg" alt="Panzer project thumbnail" loading="lazy" />
             </div>
             <div class="card-body">
               <p class="card-kicker">Mobile robotics</p>
@@ -394,7 +294,7 @@
             data-image="assets/catMoodLamp.jpg"
           >
             <div class="thumb">
-              <img src="assets/catMoodLamp.jpg" alt="Cat Mood Lamp thumbnail" />
+              <img src="assets/catMoodLamp.jpg" alt="Cat Mood Lamp thumbnail" loading="lazy" />
             </div>
             <div class="card-body">
               <p class="card-kicker">Product design</p>
@@ -422,7 +322,7 @@
             data-image="assets/clawV1.jpg"
           >
             <div class="thumb">
-              <img src="assets/clawV1.jpg" alt="Robot Claw v1 thumbnail" />
+              <img src="assets/clawV1.jpg" alt="Robot Claw v1 thumbnail" loading="lazy" />
             </div>
             <div class="card-body">
               <p class="card-kicker">Mechanical design</p>
@@ -450,7 +350,7 @@
             data-image="assets/clawV2.jpg"
           >
             <div class="thumb">
-              <img src="assets/clawV2.jpg" alt="Robot Claw v2 thumbnail" />
+              <img src="assets/clawV2.jpg" alt="Robot Claw v2 thumbnail" loading="lazy" />
             </div>
             <div class="card-body">
               <p class="card-kicker">Iteration</p>
@@ -495,7 +395,7 @@
             data-image-fit="contain"
           >
             <div class="thumb">
-              <img src="assets/e-shell-laptop.jpg" alt="E-Shell attachment system fitted to the back of a laptop" />
+              <img src="assets/e-shell-laptop.jpg" alt="E-Shell attachment system fitted to the back of a laptop" loading="lazy" />
             </div>
             <div class="card-body">
               <p class="card-kicker">Modular laptop system</p>
@@ -527,7 +427,7 @@
             data-image="assets/clamp.png"
           >
             <div class="thumb">
-              <img src="assets/clamp.png" alt="Desk Clamp" />
+              <img src="assets/clamp.png" alt="Desk Clamp" loading="lazy" />
             </div>
             <div class="card-body">
               <p class="card-kicker">Functional print</p>
@@ -556,7 +456,7 @@
             data-image="assets/rose.jpg"
           >
             <div class="thumb">
-              <img src="assets/rose.jpg" alt="Rose" />
+              <img src="assets/rose.jpg" alt="Rose" loading="lazy" />
             </div>
             <div class="card-body">
               <p class="card-kicker">Decorative print</p>
@@ -585,7 +485,7 @@
             data-image="assets/keychain.jpg"
           >
             <div class="thumb">
-              <img src="assets/keychain.jpg" alt="Keychain" />
+              <img src="assets/keychain.jpg" alt="Keychain" loading="lazy" />
             </div>
             <div class="card-body">
               <p class="card-kicker">Accessory</p>
@@ -595,6 +495,99 @@
           </article>
         </div>
       </section>
+      <section id="capabilities" class="container section capabilities-section">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">What I can do</p>
+            <h2>Engineering support from idea to prototype.</h2>
+          </div>
+          <p>
+            I combine CAD, electronics, robotics, software, and 3D printing to turn early concepts
+            into testable physical builds.
+          </p>
+        </div>
+
+        <div class="capability-grid">
+          <article>
+            <h3>Robotics Prototypes</h3>
+            <p>Small robotic platforms, mechanisms, expressive devices, and proof-of-concept builds.</p>
+          </article>
+          <article>
+            <h3>CAD and Mechanical Design</h3>
+            <p>Parts, enclosures, brackets, mounts, mechanisms, and designs prepared for fabrication.</p>
+          </article>
+          <article>
+            <h3>Electronics Prototyping</h3>
+            <p>Microcontroller projects, sensor integration, wiring plans, test circuits, and iteration support.</p>
+          </article>
+          <article>
+            <h3>Software Development</h3>
+            <p>Embedded logic, control behaviour, web tools, project interfaces, and build documentation.</p>
+          </article>
+        </div>
+      </section>
+      <section id="skills" class="container section skills-section">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Skills and tools</p>
+            <h2>The tools behind the work.</h2>
+          </div>
+          <p>
+            The core skills are supported by practical tools, build processes, and hands-on testing.
+          </p>
+        </div>
+
+        <div class="skill-bubbles" aria-label="Skills">
+          <span>CAD</span>
+          <span>Electrical prototyping</span>
+          <span>Robotics</span>
+          <span>Mechanical designs</span>
+          <span>Software development</span>
+        </div>
+
+        <div class="tool-grid" aria-label="Tools and process">
+          <article>
+            <span>CAD / Design</span>
+            <strong>Fusion 360, mechanical assemblies, print-ready parts</strong>
+          </article>
+          <article>
+            <span>Electronics</span>
+            <strong>ESP32, Arduino-style prototyping, soldering, sensor wiring</strong>
+          </article>
+          <article>
+            <span>Fabrication</span>
+            <strong>FDM 3D printing, tolerancing, fit checks, iteration cycles</strong>
+          </article>
+          <article>
+            <span>Software</span>
+            <strong>Embedded logic, Python/C-style development, web interfaces</strong>
+          </article>
+        </div>
+      </section>
+
+      <section id="services-preview" class="container section services-preview">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Let’s work together</p>
+            <h2>Services for makers, students, and early-stage ideas.</h2>
+          </div>
+          <p>
+            I support small custom projects that need
+            CAD, prototyping, 3D printing, or robotics thinking.
+          </p>
+        </div>
+
+        <div class="service-strip">
+          <span>Prototype planning</span>
+          <span>CAD part design</span>
+          <span>3D printed components</span>
+          <span>Electronics support</span>
+          <span>Robotics concepts</span>
+        </div>
+
+        <a class="btn primary" href="services.html">View services</a>
+      </section>
+
     </main>
 
     <footer class="container footer">
@@ -639,7 +632,7 @@
 
         <div class="modal-content">
           <div class="modal-image-wrap" id="modalImageWrap">
-            <img id="modalImage" src="" alt="" />
+            <img id="modalImage" alt="" />
             <div class="modal-placeholder" id="modalPlaceholder">Image placeholder</div>
             <div class="modal-gallery" id="modalGallery" aria-label="Project images"></div>
           </div>
